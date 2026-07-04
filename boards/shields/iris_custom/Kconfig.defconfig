@@ -1,5 +1,16 @@
-config SHIELD_IRIS_CUSTOM_LEFT
-    def_bool $(shields_list_contains,iris_custom_left)
+if SHIELD_IRIS_CUSTOM_LEFT
 
-config SHIELD_IRIS_CUSTOM_RIGHT
-    def_bool $(shields_list_contains,iris_custom_right)
+config ZMK_KEYBOARD_NAME
+    default "Iris Custom"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_IRIS_CUSTOM_LEFT || SHIELD_IRIS_CUSTOM_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
