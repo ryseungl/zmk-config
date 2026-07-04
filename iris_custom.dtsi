@@ -1,0 +1,11 @@
+file_format: "1"
+id: iris_custom
+name: Iris Custom
+type: shield
+url: ""
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - iris_custom_left
+  - iris_custom_right

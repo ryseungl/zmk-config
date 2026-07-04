@@ -1,0 +1,16 @@
+#include "iris_custom.dtsi"
+
+&default_transform {
+    col-offset = <6>;
+};
+
+&kscan0 {
+    col-gpios
+        = <&gpio1 11 GPIO_ACTIVE_HIGH>
+        , <&gpio0 10 GPIO_ACTIVE_HIGH>
+        , <&gpio0 9 GPIO_ACTIVE_HIGH>
+        , <&gpio1 6 GPIO_ACTIVE_HIGH>
+        , <&gpio1 4 GPIO_ACTIVE_HIGH>
+        , <&gpio0 31 GPIO_ACTIVE_HIGH>
+        ;
+};
