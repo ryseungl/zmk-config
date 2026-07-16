@@ -1,7 +1,7 @@
 if SHIELD_IRIS_CUSTOM_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "Iris Custom"
+    default "HITE K56"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
