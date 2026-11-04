@@ -1,0 +1,16 @@
+/*
+ * ESB split transport address for the Iris Custom (HITE K56).
+ * This exact node must be included by the dongle, left, and right
+ * overlays — devices only talk to others with a matching address.
+ * The base addresses spell "HITE" / "K56!" so this set does not
+ * collide with the badjeff sample defaults or a stock BLE build.
+ */
+
+/ {
+    esb_split {
+        compatible = "zmk,esb-split";
+        base-addr-0 = <0x48 0x49 0x54 0x45>;
+        base-addr-1 = <0x4B 0x35 0x36 0x21>;
+        addr-prefix = <0xE7 0xC2 0xC3 0xC4 0xC5 0xC6 0xC7 0xC8>;
+    };
+};
