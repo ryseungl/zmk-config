@@ -14,3 +14,5 @@
         , <&gpio0 11 GPIO_ACTIVE_HIGH>
         ;
 };
+
+#include "iris_custom__esb_addr.dtsi"
