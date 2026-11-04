@@ -16,3 +16,5 @@
 &kscan0 {
     status = "disabled";
 };
+
+#include "iris_custom__esb_addr.dtsi"
