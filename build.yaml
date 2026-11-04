@@ -1,12 +1,12 @@
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0//zmk
     shield: iris_custom_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0//zmk
     shield: iris_custom_left
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0//zmk
     shield: iris_custom_right
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0//zmk
     shield: settings_reset
